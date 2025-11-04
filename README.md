@@ -1,1 +1,1 @@
-jita connection test
+jita connection test 2.0
