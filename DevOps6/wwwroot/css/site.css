@@ -1,22 +1,74 @@
-html {
-  font-size: 14px;
-}
+/* OSU-Themed Styling for MSIS 4363 Landing Page */
 
-@media (min-width: 768px) {
-  html {
-    font-size: 16px;
-  }
-}
-
-.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
-  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
-}
-
-html {
-  position: relative;
-  min-height: 100%;
+/* Brand Colors */
+:root {
+    --osu-orange: #ff6600;
+    --osu-black: #000000;
+    --osu-gray: #f4f4f4;
+    --osu-white: #ffffff;
 }
 
 body {
-  margin-bottom: 60px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    background-color: var(--osu-gray);
+    color: var(--osu-black);
+}
+
+/* Hero Section */
+.hero {
+    background-color: var(--osu-orange);
+    color: var(--osu-white);
+    padding: 85px 13px;
+    text-align: center;
+}
+
+    .hero h1 {
+        font-size: 2.0em;
+        margin-bottom: 7px;
+        letter-spacing: 1px;
+    }
+
+.subtitle {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+/* Content Section */
+.content {
+    background-color: var(--osu-white);
+    padding: 60px 100px;
+    max-width: 1000px;
+    margin: 40px auto;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-height: auto;
+}
+
+    .content h2 {
+        color: var(--osu-orange);
+        border-bottom: 2px solid var(--osu-orange);
+        padding-bottom: 10px;
+        margin-bottom: 20px;
+    }
+
+    .content ul {
+        list-style-type: none;
+        padding: 0;
+    }
+
+    .content li {
+        background: var(--osu-gray);
+        margin: 10px 0;
+        padding: 10px 15px;
+        border-left: 5px solid var(--osu-orange);
+    }
+
+/* Footer Section */
+.footer {
+    background-color: var(--osu-black);
+    color: var(--osu-white);
+    text-align: center;
+    padding: 0.5px; /*20*/
+    font-size: 0.9em;
 }
