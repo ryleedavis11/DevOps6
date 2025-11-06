@@ -1,12 +1,9 @@
 version: 0.2
-
 phases:
   build:
     commands:
-      - echo "Preparing files for deployment..."
-      - mkdir -p output
-      - cp -r DevOps6/wwwroot/* output/
-
+      - dotnet restore
+      - dotnet publish -c Release -o output
 artifacts:
   files:
     - '**/*'
