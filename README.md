@@ -1,1 +1,1 @@
-jita connection test 5.0
+jira connection test 5.0
